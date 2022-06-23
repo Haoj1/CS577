@@ -1,0 +1,150 @@
+% ---------
+%  Compile with "pdflatex hw0".
+% --------
+%!TEX TS-program = pdflatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt]{article}
+\usepackage{jeffe,handout,graphicx}
+\usepackage[utf8]{inputenc}		% Allow some non-ASCII Unicode in source
+
+% =========================================================
+%   Define common stuff for solution headers
+% =========================================================
+\Class{CS 577}
+\Semester{Summer 2022}
+\Authors{1}
+\AuthorOne{Author Name}{aname}
+%\Section{}
+
+% =========================================================
+\begin{document}
+
+% ---------------------------------------------------------
+
+\begin{center}
+    \huge CS 577 Summer 2022 \\ Homework 1
+\end{center}
+
+\hrule
+
+\begin{center}
+    \Large \textcolor{red}{\texttildelow \textbf{Submission}\texttildelow }
+\end{center}
+
+\begin{itemize}
+    \item \textbf{Groups of up to six people can submit joint solutions.} Each problem should be submitted by exactly one person, and the beginning of the homework should clearly state the Gradescope names and email addresses of each group member. In addition, whoever submits the homework must tell Gradescope who their other group members are.
+    
+    \item \textbf{Submit your solutions electronically on the course Gradescope site as PDF files.} Use the Latex template provided and place your answers in the solution blocks. You may include hand-drawn figures as needed by using \textbackslash includegraphics with the desired image.
+    \item \textbf{Make sure to specify on Gradescope which pages of the PDF go to which problems.}
+\end{itemize}
+
+\hrule
+
+\begin{center}
+    \Large \textcolor{red}{\texttildelow \textbf{Homework Policies}\texttildelow }
+\end{center}
+
+\begin{itemize}
+    \item \textbf{You may use any source at your disposal}—paper, electronic, or human—but you \textbf{must}
+    cite \textbf{every} source that you use, and you must write everything yourself in your own words.
+    See the academic integrity policies on the course web site for more details.
+    
+    \item The answer “\textbf{I don’t know}” (and nothing else) is worth 25\% partial credit on any required problem or subproblem, on any homework or exam. We will accept synonyms like “No idea” or “WTF” or “what??”, but you must write something.
+    
+    \item \textbf{Avoid the Three Deadly Sins!} Any homework or exam solution that breaks any of the
+    following rules will be given an \textcolor{red}{\textbf{automatic zero}}, unless the solution is otherwise perfect.
+    Yes, we really mean it. We’re not trying to be scary or petty (Honest!), but we do want to
+    break a few common bad habits that seriously impede mastery of the course material.
+    \begin{itemize}
+        \item Always give complete solutions, not just examples.
+        \item Always declare all your variables, in English. In particular, always describe the specific problem your algorithm is supposed to solve.
+        \item Never use weak induction.
+    \end{itemize}
+    \item \textbf{Unless otherwise specified, when asked to describe and analyze an algorithm, you must}
+    \begin{itemize}
+        \item \textbf{Specify} the problem the algorithm solves if different than exactly what the question asks. For example, if the algorithm solves a more general problem.
+        \item \textbf{Describe} the algorithm either in English or Pseudocode depending on which most clearly and precisely conveys the ideas.
+        \item Give an argument for \textbf{correctness}. This sometimes requires a brief induction proof.
+        \item Give an asymptotic \textbf{analysis} of the algorithm's run time.
+    \end{itemize}
+\end{itemize}
+
+\hrule
+
+\newpage
+
+
+\HomeworkHeader{1}{1}	% homework number, problem number
+
+\paragraph{Problem.} \textit{Textbook problem Ch$0$ problem $0$} \\
+\noindent Describe and analyze an efficient algorithm that determines, given a legal arrangement of standard pieces on a standard chess board, which player will
+win at chess from the given starting position if both players play perfectly. [Hint: There is a trivial one-line solution!]
+
+\hrule
+
+\begin{solution}
+
+
+\end{solution}
+
+% ---------------------------------------------------------
+
+\HomeworkHeader{1}{2}
+
+\paragraph{Problem.} \textit{Textbook problem Ch$1$ problem $29$ parts (a) - (c)} \\
+\noindent Most graphics hardware includes support for a low-level operation called blit,
+or block transfer, which quickly copies a rectangular chunk of a pixel map (a two-dimensional array of pixel values) from one location to another. This
+is a two-dimensional version of the standard C library function memcpy().
+
+Suppose we want to rotate an n x n pixel map 90 clockwise. One way to
+do this, at least when n is a power of two, is to split the pixel map into four
+n/2 x n/2 blocks, move each block to its proper position using a sequence of
+five blits, and then recursively rotate each block. (Why five? For the same
+reason the Tower of Hanoi puzzle needs a third peg.) Alternately, we could
+first recursively rotate the blocks and then blit them into place.
+
+\begin{enumerate}[(a)]
+    \item Prove that both versions of the algorithm are correct when n is a power of 2.
+    \item Exactly how many blits does the algorithm perform when n is a power of 2?
+    \item Describe how to modify the algorithm so that it works for arbitrary n, not just powers of 2. How many blits does your modified algorithm?
+perform?
+\end{enumerate}
+
+\hrule
+
+
+\begin{solution}\
+
+\begin{enumerate}[(a)]
+    \item 
+    \item 
+    \item 
+\end{enumerate}
+
+
+\end{solution}
+
+% ---------------------------------------------------------
+
+
+\HomeworkHeader{1}{3}
+
+\paragraph{Problem.} \textit{Textbook problem Ch$1$ problem $37$} \\
+\noindent For this problem, a subtree of a binary tree means any connected subgraph.
+A binary tree is complete if every internal node has two children, and every
+leaf has exactly the same depth. Describe and analyze a recursive algorithm
+to compute the largest complete subtree of a given binary tree. Your algorithm
+should return both the root and the depth of this subtree. See Figure 1.26 for an example.
+
+\hrule
+
+\begin{solution}
+
+
+
+\end{solution}
+
+
+
+\end{document}
